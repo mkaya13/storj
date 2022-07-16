@@ -1,0 +1,20 @@
+- Go inside the file where uplink.exe is downloaded and open windows powershell.
+
+- Create a bucket to store data
+- ./uplink.exe mb sj://jsondata
+
+- To see buckets created earlier
+- ./uplink.exe ls
+
+- Download data inside that bucket
+- ./uplink cp first_data.json sj://jsondata
+
+- To view data inside jsondata bucket
+- ./uplink.exe ls sj://jsondata
+
+- To download json data into the local computer
+- ./uplink.exe cp sj://jsondata/first_data.json/
+
+
+- Generate a shareable URL
+./uplink.exe share --url sj://jsondata/first_data.json
